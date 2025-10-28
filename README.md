@@ -1,7 +1,7 @@
 # Transcripta
 This is a project we made and submitted for our IDC409- Intro to DS and AI course. 
 
-# Speech-to-Text and it's Applications
+## Speech-to-Text and it's Applications
 
 ## Overview
 This includes all the details of the project we have created for our **IDC409: Introduction to Data Science and Artificial Intelligence** course. The assignment was to take an audio file, transcribe its contents into text, and optionally use this text for further processing or text-to-speech synthesis. We developed a speech-to-text (STT) system utilising the `faster-whisper` library, which leverages OpenAI’s Whisper model.
