@@ -1,0 +1,75 @@
+##########################################
+# Speech Recognition Comparison Tool
+# Dependencies for Windows & macOS
+##########################################
+
+# Core speech recognition engines 
+faster-whisper>=1.0.0
+vosk>=0.3.45
+SpeechRecognition>=3.10.0
+
+# Audio handling 
+sounddevice>=0.4.6
+soundfile>=0.12.1
+pydub>=0.25.1
+numpy>=1.26.0
+
+# Evaluation metrics 
+jiwer>=3.0.3
+
+# System utilities 
+psutil>=5.9.8
+certifi>=2024.6.2
+
+# Data analysis & visualization 
+pandas>=2.2.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# GUI
+tk  # Included with Python on most OS; kept for reference
+
+##########################################
+# WINDOWS SETUP 
+##########################################
+# 1. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 2. Install FFmpeg manually:
+#    - Download from: https://ffmpeg.org/download.html
+#    - Extract and add the "bin" folder to your System PATH
+#
+# 3. Run scripts:
+#    python speech_to_text.py
+#    python compare_models.py
+#    python live_transcriber.py
+#
+# 4. (Optional) Verify installation:
+#    ffmpeg -version
+#    python -m sounddevice
+#
+##########################################
+# MACOS SETUP 
+##########################################
+# 1. Install Homebrew if not installed:
+#    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+# 2. Install FFmpeg using Homebrew:
+#    brew install ffmpeg
+#
+# 3. Then install dependencies:
+#    pip3 install -r requirements.txt
+#
+# 4. Run scripts normally:
+#    python3 speech_to_text.py
+#    python3 compare_models.py
+#    python3 live_transcriber.py
+#
+# 5. (Optional) Allow microphone access:
+#    System Preferences > Security & Privacy > Microphone > Enable Python
+#
+##########################################
+# Tested on:
+# - Windows 10/11 (Python 3.10+)
+# - macOS Sonoma / Ventura (Python 3.10+)
+##########################################
